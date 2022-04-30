@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movieflix - Web App</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
 
 <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
@@ -24,7 +26,7 @@
           </div>
           <!--Usuario-->
         <a href="#" class="user">
-            <img src="img/user.jpg" alt="" class="user-img">
+            <img src="{% static 'img/user.jpg' %}" alt="" class="user-img">
         </a>
     
     <!--barra navegacion-->
@@ -58,7 +60,7 @@
 
    <section class="home container" id="home">
 
-    <img src="img/home-background.png" alt="" class="home-img">
+    <img src="{% static 'img/home-background.png' %}" alt="" class="home-img">
     <div class="home-text">
 
     <h1 class="home-title">Hitman's Wife's <br> Bodyguard </h1>
@@ -87,7 +89,7 @@
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="movie-box">
-                <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img">
+                <img src="{% static 'img/popular-movie-1.jpg' %}" alt="" class="movie-box-img">
                 <div class="box-text">
                     <h2 class="movie-title">Spiderman : No Way Home</h2>
                     <span class="movie-type">Accion</span>
@@ -100,7 +102,7 @@
 
         <div class="swiper-slide">
             <div class="movie-box">
-                <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img">
+                <img src="{% static 'img/popular-movie-1.jpg' %}" alt="" class="movie-box-img">
                 <div class="box-text">
                     <h2 class="movie-title">Spiderman No Way Home</h2>
                     <span class="movie-type">Accion</span>
@@ -113,7 +115,7 @@
 
         <div class="swiper-slide">
             <div class="movie-box">
-                <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img">
+                <img src="{% static 'img/popular-movie-1.jpg' %}" alt="" class="movie-box-img">
                 <div class="box-text">
                     <h2 class="movie-title">Spiderman No Way Home</h2>
                     <span class="movie-type">Accion</span>
@@ -129,7 +131,7 @@
 
         <div class="swiper-slide">
             <div class="movie-box">
-                <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img">
+                <img src="{% static 'img/popular-movie-1.jpg' %}" alt="" class="movie-box-img">
                 <div class="box-text">
                     <h2 class="movie-title">Spiderman No Way Home</h2>
                     <span class="movie-type">Accion</span>
@@ -146,7 +148,7 @@
         
         <div class="swiper-slide">
             <div class="movie-box">
-                <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img">
+                <img src="{% static 'img/popular-movie-1.jpg' %}" alt="" class="movie-box-img">
                 <div class="box-text">
                     <h2 class="movie-title">Spiderman No Way Home</h2>
                     <span class="movie-type">Accion</span>
@@ -176,7 +178,7 @@
  <div class="movies-content">
 
  <div class="movie-box">
-    <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img">
+    <img src="{% static 'img/popular-movie-1.jpg' %}" alt="" class="movie-box-img">
     <div class="box-text">
         <h2 class="movie-title">Spiderman No Way Home</h2>
         <span class="movie-type">Accion</span>
@@ -187,7 +189,7 @@
 </div>
 
 <div class="movie-box">
-    <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img">
+    <img src="{% static 'img/popular-movie-1.jpg' %}" alt="" class="movie-box-img">
     <div class="box-text">
         <h2 class="movie-title">Spiderman No Way Home</h2>
         <span class="movie-type">Accion</span>
@@ -197,7 +199,7 @@
     </div>
 </div>
 <div class="movie-box">
-    <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img">
+    <img src="{% static 'img/popular-movie-1.jpg' %}" alt="" class="movie-box-img">
     <div class="box-text">
         <h2 class="movie-title">Spiderman No Way Home</h2>
         <span class="movie-type">Accion</span>
@@ -207,7 +209,7 @@
     </div>
 </div>
 <div class="movie-box">
-    <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img">
+    <img src="{% static 'img/popular-movie-1.jpg' %}" alt="" class="movie-box-img">
     <div class="box-text">
         <h2 class="movie-title">Spiderman No Way Home</h2>
         <span class="movie-type">Accion</span>
@@ -233,8 +235,8 @@
 
 
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 
 </body>
 </html>
